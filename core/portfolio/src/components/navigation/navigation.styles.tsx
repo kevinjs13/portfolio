@@ -11,13 +11,15 @@ export const NavigationContainer = styled.nav`
   justify-content: space-between;
 `;
 export const LogoContainer = styled.a`
+  all: unset;
   justify-items: flex-start;
   margin: 1em;
   cursor: pointer;
 `;
 
-export const Logo = styled.img`
-  width: 5rem;
+export const Logo = styled.span`
+  font-family: "Staatliches", sans-serif;
+  font-size: 2.5em;
 `;
 
 export const NavigationList = styled.ul`
@@ -33,9 +35,16 @@ export const NavigationItem = styled.li`
 export const NavigationLink = styled.a<NavigationProps>`
   all: unset;
   cursor: pointer;
+  border: 2px solid #000;
+  padding: 0 1em;
   ${(props) =>
     props.isActive &&
     css`
-      background-color: red;
+      background-color: #000;
+      color: #fff;
     `}
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
 `;

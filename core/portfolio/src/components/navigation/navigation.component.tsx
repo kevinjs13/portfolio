@@ -1,6 +1,5 @@
 import React from "react";
 import * as Styled from "./navigation.styles";
-import Logo from "../../assets/images/K.svg";
 import { NavigationItems } from "../../data/routes";
 import { useLocation } from "react-router-dom";
 
@@ -10,7 +9,7 @@ const Navigation: React.FC = () => {
   return (
     <Styled.NavigationContainer>
       <Styled.LogoContainer href="/">
-        <Styled.Logo src={Logo} alt="My Logo" />
+        <Styled.Logo>KEVIN JEFFERSON</Styled.Logo>
       </Styled.LogoContainer>
       <Styled.NavigationList>
         {NavigationItems.map((navigationItem) => (
