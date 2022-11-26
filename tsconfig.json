@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.build.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "types": ["jest", "node", "@testing-library/jest-dom"]
+  },
+  "paths": {
+    "@keso/portfolio*": ["./core/portfolio/src"]
+  },
+  "exclude": ["node_modules", "dist"]
+}

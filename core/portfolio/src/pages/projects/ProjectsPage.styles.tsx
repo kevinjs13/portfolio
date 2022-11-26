@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const DevelopmentContainer = styled.div`
+export const ProjectsContainer = styled.div`
   background-color: green;
   height: 100%;
 `;
