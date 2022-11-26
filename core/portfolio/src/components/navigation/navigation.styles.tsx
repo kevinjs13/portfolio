@@ -8,35 +8,35 @@ export const NavigationContainer = styled.nav`
   background-color: aliceblue;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 `;
+
 export const LogoContainer = styled.a`
   all: unset;
-  justify-items: flex-start;
-  margin: 1em;
+  margin-top: 1rem;
   cursor: pointer;
 `;
 
 export const Logo = styled.span`
   font-family: "Staatliches", sans-serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
 `;
 
 export const NavigationList = styled.ul`
   display: flex;
-  justify-items: flex-end;
 `;
 
 export const NavigationItem = styled.li`
   list-style: none;
-  margin: 1em;
+  margin: 0 1rem;
 `;
 
 export const NavigationLink = styled.a<NavigationProps>`
   all: unset;
   cursor: pointer;
   border: 2px solid #000;
-  padding: 0 1em;
+  padding: 0 1rem;
   ${(props) =>
     props.isActive &&
     css`

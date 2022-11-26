@@ -1,11 +1,11 @@
 import React from "react";
-import * as Styled from './development.styles'
+import * as Styled from './DevelopmentPage.styles'
 
-const Development: React.FC = () => {
+const DevelopmentPage: React.FC = () => {
   return (
     <Styled.DevelopmentContainer>
         Development
     </Styled.DevelopmentContainer>
   );
 };
-export default Development;
+export default DevelopmentPage;

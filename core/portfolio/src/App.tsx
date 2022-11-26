@@ -3,9 +3,9 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import * as Styled from "./App.styles";
 import Navigation from "./components/navigation/navigation.component";
-import Design from "./pages/design/design.component";
-import Development from "./pages/development/development.component";
-import Home from "./pages/home/home.component";
+import DesignPage from "./pages/design/DesignPage";
+import DevelopmentPage from "./pages/development/DevelopmentPage";
+import HomePage from "./pages/home/HomePage";
 import Personal from "./pages/personal/personal.component";
 
 const App: React.FC = () => {
@@ -13,10 +13,10 @@ const App: React.FC = () => {
     <Styled.AppContainer>
       <Navigation />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<Navigate replace to="/" />} />
-        <Route path="/design" element={<Design />} />
-        <Route path="/development" element={<Development />} />
+        <Route path="/design" element={<DesignPage />} />
+        <Route path="/development" element={<DevelopmentPage />} />
         <Route path="/personal" element={<Personal />} />
       </Routes>
     </Styled.AppContainer>

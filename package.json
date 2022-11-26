@@ -19,6 +19,7 @@
         "test": "yarn jest --passWithNoTests",
         "test:watch": "yarn jest --passWithNoTests --watchAll",
         "stop": "docker-compose down --remove-orphans",
+        "delete": "docker stop $(docker ps -aq); docker rm $(docker ps -aq); docker rmi $(docker images -q)",
         "prepare": "husky install"
     },
     "devDependencies": {

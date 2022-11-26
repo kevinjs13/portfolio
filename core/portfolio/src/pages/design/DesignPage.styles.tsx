@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.div`
+export const DesignContainer = styled.div`
   background-color: green;
-  flex: 1;
+  height: 100%;
 `;

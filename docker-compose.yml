@@ -1,25 +1,25 @@
 version: '3'
 
 services:
-  database:
-    container_name: keso_db
-    image: postgres:14.2
-    healthcheck:
-      test: ['CMD', 'pg_isready', '-q', '-d', 'postgres', '-U', 'postgresql_user']
-      timeout: 45s
-      interval: 10s
-      retries: 10
-    restart: always
-    environment:
-      - POSTGRES_USER=postgresql_user
-      - POSTGRES_PASSWORD=docker
-      - POSTGRES_DB=keso_db
-    volumes:
-      - db-data:/var/lib/postgresql/data/
-    ports:
-      - '127.0.0.1:5432:5432'
-    networks:
-      - keso_network
+  # database:
+  #   container_name: keso_db
+  #   image: postgres:14.2
+  #   healthcheck:
+  #     test: ['CMD', 'pg_isready', '-q', '-d', 'postgres', '-U', 'postgresql_user']
+  #     timeout: 45s
+  #     interval: 10s
+  #     retries: 10
+  #   restart: always
+  #   environment:
+  #     - POSTGRES_USER=postgresql_user
+  #     - POSTGRES_PASSWORD=docker
+  #     - POSTGRES_DB=keso_db
+  #   volumes:
+  #     - db-data:/var/lib/postgresql/data/
+  #   ports:
+  #     - '127.0.0.1:5432:5432'
+  #   networks:
+  #     - keso_network
 
   portfolio:
     container_name: portfolio
