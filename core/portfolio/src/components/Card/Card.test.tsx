@@ -13,11 +13,11 @@ const urlLists = {
 };
 
 const mockProps = {
-  imageUrl: ``,
-  imageAltText: ``,
-  techStack: ``,
-  title: ``,
-  description: ``,
+  imageUrl: "",
+  imageAltText: "",
+  techStack: "",
+  title: "",
+  description: "",
   urls: urlLists,
 };
 
