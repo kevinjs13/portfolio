@@ -5,7 +5,7 @@ const PROJECTS_DATA = [
     imageAltText: ``,
     techStack: ``,
     title: "Nova",
-    description: "Games Development Company",
+    description: "A Games Development Company",
     urls: {
       appUrl: "",
       brandingUrl: "https://www.behance.net/gallery/97562563/NOVA",
