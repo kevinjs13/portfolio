@@ -1,6 +1,6 @@
 import React from "react";
 import * as Styled from "./Navigation.styled";
-import { NavigationItems } from "../../data/routes";
+import { NavigationItems } from "../../data/routes.data";
 import { useLocation } from "react-router-dom";
 
 const Navigation: React.FC = () => {

@@ -17,8 +17,8 @@ const mockProps = {
   imageAltText: ``,
   techStack: ``,
   title: ``,
-  urls: urlLists,
   description: ``,
+  urls: urlLists,
 };
 
 describe(`Card component`, () => {

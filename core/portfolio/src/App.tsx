@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation/Navigation";
 import ProjectsPage from "./pages/projects/ProjectsPage";
 import HomePage from "./pages/home/HomePage";
 import PersonalPage from "./pages/personal/PersonalPage";
-import { Paths } from "./data/routes";
+import { Paths } from "./data/routes.data";
 
 const App: React.FC = () => {
   return (
