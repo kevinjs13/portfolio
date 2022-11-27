@@ -1,5 +1,5 @@
 import React from "react";
-import * as Styled from "./navigation.styles";
+import * as Styled from "./Navigation.styled";
 import { NavigationItems } from "../../data/routes";
 import { useLocation } from "react-router-dom";
 

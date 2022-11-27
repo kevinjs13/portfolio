@@ -1,5 +1,5 @@
 import React from "react";
-import * as Styled from './ProjectsPage.styles'
+import * as Styled from './ProjectsPage.styled'
 
 const ProjectsPage: React.FC = () => {
   return (
