@@ -1,5 +1,5 @@
 import React from "react";
-import * as Styled from './HomePage.styles'
+import * as Styled from "./HomePage.styles";
 import ProfileImage from "../../assets/images/profile.jpg";
 import { v4 as uuidv4 } from "uuid";
 import {
@@ -45,6 +45,15 @@ const SocialsData = [
 ];
 
 const HomePage: React.FC = () => {
+  const links = {
+    personal: "/assets/files/resume.pdf",
+    github: "https://github.com/kevinjs13",
+    design: "https://www.behance.net/kevinjsouribi",
+    cook: "https://instagram.com/thesourfoodie",
+    doodle: "https://instagram.com/pixelandpigment",
+    photos: "https://instagram.com/pointerandclicker",
+    travel: "https://instagram.com/hadalayover",
+  };
   return (
     <Styled.HomePageContainer>
       <Styled.ProfileImageContainer>
@@ -52,9 +61,57 @@ const HomePage: React.FC = () => {
       </Styled.ProfileImageContainer>
       <Styled.SubtextContainer>
         <Styled.Subtext>
-          Hi! I'm <Styled.BoldText>Kevin</Styled.BoldText> <br />A{" "}
-          <Styled.BoldText>full stack software engineer</Styled.BoldText> with a
-          passion for <Styled.BoldText>design</Styled.BoldText>
+          Hi! I'm
+          <Styled.BoldText>
+            <Styled.Link href={links.personal} target="_blank">
+              {" "}
+              Kevin
+            </Styled.Link>
+          </Styled.BoldText>
+          <br />A
+          <Styled.BoldText>
+            <Styled.Link href={links.github} target="_blank">
+              {" "}
+              full stack software engineer
+            </Styled.Link>
+          </Styled.BoldText>
+          <br /> with a passion for
+          <Styled.BoldText>
+            <Styled.Link href={links.design} target="_blank">
+              {" "}
+              design
+            </Styled.Link>
+          </Styled.BoldText>
+        </Styled.Subtext>
+        <Styled.Subtext>
+          I also like to
+          <Styled.BoldText>
+            <Styled.Link href={links.cook} target="_blank">
+              {" "}
+              cook
+            </Styled.Link>
+          </Styled.BoldText>
+          , <br />
+          <Styled.BoldText>
+            <Styled.Link href={links.doodle} target="_blank">
+              doodle
+            </Styled.Link>
+          </Styled.BoldText>
+          , <br />
+          <Styled.BoldText>
+            <Styled.Link href={links.photos} target="_blank">
+              take photos
+            </Styled.Link>
+          </Styled.BoldText>
+          , <br />
+          and
+          <Styled.BoldText>
+            <Styled.Link href={links.travel} target="_blank">
+              {" "}
+              travel
+            </Styled.Link>
+          </Styled.BoldText>
+          .
         </Styled.Subtext>
         <Styled.SocialsContainer>
           {SocialsData.map((SocialsDataItem) => (

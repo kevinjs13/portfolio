@@ -22,7 +22,7 @@ export const ProfileImage = styled.img`
   height: 80vw;
   width: 80vw;
   object-fit: cover;
-  border-radius: 50%;  
+  border-radius: 50%;
   @media ${breakpoints.medium} {
     height: 300px;
     width: 300px;
@@ -31,7 +31,6 @@ export const ProfileImage = styled.img`
     height: 400px;
     width: 400px;
   }
-
 `;
 export const SubtextContainer = styled.span`
   text-align: center;
@@ -43,11 +42,13 @@ export const SubtextContainer = styled.span`
 `;
 
 export const Subtext = styled.div`
+  margin-bottom: 1em;
   font-size: 2.5rem;
 `;
 
 export const SocialsContainer = styled.ul`
   all: unset;
+  margin-top: 1em;
   display: flex;
   gap: 3em;
   flex-direction: unset;
@@ -57,6 +58,7 @@ export const SocialsContainer = styled.ul`
   @media ${breakpoints.large} {
     flex-wrap: nowrap;
     flex-direction: row-reverse;
+    justify-content: flex-start;
   }
 `;
 
@@ -77,10 +79,25 @@ export const SocialsItemLink = styled.a`
     padding: 1em;
     height: 3rem;
     width: 3rem;
+    color: #000;
+    &:hover {
+      color: #fff;
+      background-color: #000;
+      border-radius: 50%;
+    }
   }
 `;
 
 export const BoldText = styled.span`
   font-family: "KarlaBold", sans-serif;
   font-weight: 600;
+`;
+
+export const Link = styled.a`
+  all: unset;
+  cursor: pointer;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
 `;

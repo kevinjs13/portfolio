@@ -1,13 +1,15 @@
 export enum Paths {
-  HOME = "/home",
+  ABOUT_ME = "/",
   PROJECTS = "/projects",
-  PERSONAL = "/personal",
-  RESUME = "/personal/resume",
-  HOBBIES = "/personal/hobbies",
+  RESUME = "../assets/files/resume.pdf",
 }
 
-export const NavigationItems = [
-  { name: `Home`, path: Paths.HOME },
-  { name: `Projects`, path: Paths.PROJECTS },
-  { name: `Personal`, path: Paths.PERSONAL },
+export const NavigationItems: {
+  name: string;
+  path: Paths;
+  type: "file" | "nav-link";
+}[] = [
+  { name: `About Me`, path: Paths.ABOUT_ME, type: "nav-link" },
+  { name: `Projects`, path: Paths.PROJECTS, type: "nav-link" },
+  { name: `Resume`, path: Paths.RESUME, type: "file" },
 ];

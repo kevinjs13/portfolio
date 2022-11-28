@@ -14,16 +14,32 @@ const Navigation: React.FC = () => {
           <Styled.Logo>KEVIN JEFFERSON</Styled.Logo>
         </Styled.LogoContainer>
         <Styled.NavigationList>
-          {NavigationItems.map((navigationItem) => (
-            <Styled.NavigationItem key={uuidv4()}>
-              <Styled.NavigationLink
-                to={navigationItem.path}
-                isActive={location.pathname === navigationItem.path}
-              >
-                {navigationItem.name}
-              </Styled.NavigationLink>
-            </Styled.NavigationItem>
-          ))}
+          {NavigationItems.map((navigationItem) => {
+            if (navigationItem.type === "file") {
+              return (
+                <Styled.NavigationItem key={uuidv4()}>
+                  <Styled.FileLink
+                    href={navigationItem.path}
+                    target="_blank"
+                    isActive={location.pathname === navigationItem.path}
+                  >
+                    {navigationItem.name}
+                  </Styled.FileLink>
+                </Styled.NavigationItem>
+              );
+            } else {
+              return (
+                <Styled.NavigationItem key={uuidv4()}>
+                  <Styled.NavigationLink
+                    to={navigationItem.path}
+                    isActive={location.pathname === navigationItem.path}
+                  >
+                    {navigationItem.name}
+                  </Styled.NavigationLink>
+                </Styled.NavigationItem>
+              );
+            }
+          })}
         </Styled.NavigationList>
       </Styled.NavigationWrapper>
     </Styled.NavigationContainer>

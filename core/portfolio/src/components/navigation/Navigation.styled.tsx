@@ -74,3 +74,20 @@ export const NavigationLink = styled(NavLink)<NavigationProps>`
     color: #fff;
   }
 `;
+
+export const FileLink = styled.a<NavigationProps>`
+  all: unset;
+  cursor: pointer;
+  border: 2px solid #000;
+  padding: 0 1rem;
+  ${(props) =>
+    props.isActive &&
+    css`
+      background-color: #000;
+      color: #fff;
+    `}
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+`;
