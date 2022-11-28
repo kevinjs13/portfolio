@@ -2,10 +2,12 @@ export enum Paths {
   HOME = "/home",
   PROJECTS = "/projects",
   PERSONAL = "/personal",
+  RESUME = "/personal/resume",
+  HOBBIES = "/personal/hobbies",
 }
 
 export const NavigationItems = [
-  { id: 1, name: `Home`, link: `/home`, path: Paths.HOME },
-  { id: 2, name: `Projects`, link: `/projects`, path: Paths.PROJECTS },
-  { id: 4, name: `Personal`, link: `/personal`, path: Paths.PERSONAL },
+  { name: `Home`, path: Paths.HOME },
+  { name: `Projects`, path: Paths.PROJECTS },
+  { name: `Personal`, path: Paths.PERSONAL },
 ];

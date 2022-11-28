@@ -1,4 +1,6 @@
-const PROJECTS_DATA = [
+import { CardProps } from "../components/Card/Card";
+
+const PROJECTS_DATA: CardProps[] = [
   {
     imageUrl:
       "https://mir-cdn.behance.net/v1/rendition/project_modules/1400_opt_1/60762b97562563.5ec7ea71b22f9.png",
@@ -18,8 +20,8 @@ const PROJECTS_DATA = [
       "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b7ae3c101743433.5f2731df9c194.png",
     imageAltText: ``,
     techStack: ``,
-    title: "black & white",
-    description: "Men's Suits Store",
+    title: "Black & White",
+    description: "Eco Friendly Clothing Store",
     urls: {
       appUrl: "",
       brandingUrl: "",
@@ -104,7 +106,13 @@ const PROJECTS_DATA = [
     techStack: ``,
     title: "Frostee",
     description: "Cupcake Bakery",
+    urls: {
+      appUrl: "",
+      brandingUrl: "",
+      wireframeUrl: "",
+      repositoryUrl: "",
+    },
   },
 ];
 
-export default DEVELOPMENT_DATA;
+export default PROJECTS_DATA;

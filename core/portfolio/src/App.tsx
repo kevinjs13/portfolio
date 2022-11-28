@@ -16,7 +16,9 @@ const App: React.FC = () => {
         <Route path="/" element={<HomePage />} />
         <Route path={Paths.HOME} element={<Navigate replace to="/" />} />
         <Route path={Paths.PROJECTS} element={<ProjectsPage />} />
-        <Route path={Paths.PERSONAL} element={<PersonalPage />} />
+        <Route path={Paths.PERSONAL} element={<Navigate replace to={Paths.RESUME} />} />
+        <Route path={Paths.RESUME} element={<PersonalPage />} />
+        <Route path={Paths.HOBBIES} element={<PersonalPage />} />
       </Routes>
     </Styled.AppContainer>
   );

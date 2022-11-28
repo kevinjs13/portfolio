@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.div`
-  background-color: green;
-  height: 100%;
+  display: flex;
+  gap: 2em;
+  row-gap: 3em;
+  flex-wrap: wrap;
+  padding: 1em;
+  justify-content: center;
+  align-items: center;
 `;

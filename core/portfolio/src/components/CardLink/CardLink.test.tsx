@@ -7,7 +7,7 @@ import CardLink from ".";
 import { IoAccessibilityOutline } from "react-icons/io5";
 
 const linkText = `Sample Button`;
-const linkUrl = `#`;
+const linkUrl = `www.google.com`;
 
 describe(`Card Link component`, () => {
   it("should be a link", async () => {
@@ -26,14 +26,17 @@ describe(`Card Link component`, () => {
     expect(link).toBeTruthy();
   });
 
-  it("should have a link based on prop", () => {
+  it("should have a link based on prop", async () => {
     render(<CardLink text={linkText} link={linkUrl} />);
 
-    const link = screen.getByText(linkText);
+    const link = await screen.findByRole("link", {
+      name: linkText,
+    });
+
     expect(link).toHaveAttribute("href", linkUrl);
   });
 
-  it("should have an icon if passed as props", () => {
+  it("should have an icon if passed as props", async () => {
     render(
       <CardLink
         text={linkText}
@@ -42,7 +45,9 @@ describe(`Card Link component`, () => {
       />
     );
 
-    const link = screen.getByText(linkText);
+    const link = await screen.findByRole("link", {
+      name: linkText,
+    });
     expect(link).toHaveAttribute("href", linkUrl);
   });
 });

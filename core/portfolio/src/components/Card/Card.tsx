@@ -16,7 +16,7 @@ interface CardUrlList {
   repositoryUrl: string;
 }
 
-interface CardProps {
+export interface CardProps {
   imageUrl: string;
   imageAltText: string;
   techStack: string;
@@ -46,19 +46,24 @@ const Card: React.FC<CardProps> = ({
 
   return (
     <Styled.CardContainer>
-      <div>
-        <img src={imageUrl} alt={imageAltText} />
-      </div>
-      <h1>{title}</h1>
-      <h2>{description}</h2>
-      <span>Built with: {techStack}</span>
-      {linksData.map((linksDataItem) => (
-        <CardLink
-          key={uuidv4()}
-          text={linksDataItem.text}
-          link={linksDataItem.link}
-        />
-      ))}
+      <Styled.ImageContainer>
+        <Styled.Image src={imageUrl} alt={imageAltText} />
+      </Styled.ImageContainer>
+      <Styled.Title>{title}</Styled.Title>
+      <Styled.Description>{description}</Styled.Description>
+      <Styled.TechStack>Built with: {techStack}</Styled.TechStack>
+      <Styled.LinksContainer>
+        {linksData.map((linksDataItem) => (
+          <Styled.Link key={uuidv4()}>
+            <CardLink
+              key={uuidv4()}
+              text={linksDataItem.text}
+              link={linksDataItem.link}
+              icon={linksDataItem.icon}
+            />
+          </Styled.Link>
+        ))}
+      </Styled.LinksContainer>
     </Styled.CardContainer>
   );
 };
