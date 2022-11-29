@@ -1,30 +1,32 @@
 import React from "react";
 import * as Styled from "./HomePage.styles";
 import ProfileImage from "../../assets/images/profile.jpg";
+// import ProfileImage from "../../assets/images/profile-sketch.png";
+
 import { v4 as uuidv4 } from "uuid";
 import {
-  IoLogoFacebook,
-  IoLogoInstagram,
   IoLogoTwitter,
   IoLogoDribbble,
   IoLogoBehance,
   IoLogoGithub,
 } from "react-icons/io5";
+import { AiFillMediumCircle } from "react-icons/ai";
+import { TiSocialLinkedin } from "react-icons/ti";
 
 const SocialsData = [
   {
-    name: "facebook",
-    link: "https://facebook.com",
-    Icon: IoLogoFacebook,
+    name: "medium",
+    link: "https://medium.com/@kevinjs13",
+    Icon: AiFillMediumCircle,
   },
   {
-    name: "instagram",
-    link: "https://instagram.com",
-    Icon: IoLogoInstagram,
+    name: "linkedin",
+    link: "https://www.linkedin.com/in/kevjeffsour/",
+    Icon: TiSocialLinkedin,
   },
   {
     name: "twitter",
-    link: "https://twitter.com",
+    link: "https://twitter.com/adevnamedkevin",
     Icon: IoLogoTwitter,
   },
   {
@@ -34,12 +36,12 @@ const SocialsData = [
   },
   {
     name: "behance",
-    link: "https://behance.com",
+    link: "https://www.behance.net/kevinjsouribi",
     Icon: IoLogoBehance,
   },
   {
     name: "github",
-    link: "https://github.com",
+    link: "https://github.com/kevinjs13",
     Icon: IoLogoGithub,
   },
 ];
@@ -111,13 +113,15 @@ const HomePage: React.FC = () => {
               travel
             </Styled.Link>
           </Styled.BoldText>
-          .
         </Styled.Subtext>
         <Styled.SocialsContainer>
           {SocialsData.map((SocialsDataItem) => (
             <Styled.SocialsItem key={uuidv4()}>
-              <Styled.SocialsItemLink href={SocialsDataItem.link}>
-                {<SocialsDataItem.Icon />}
+              <Styled.SocialsItemLink
+                href={SocialsDataItem.link}
+                target="_blank"
+              >
+                <SocialsDataItem.Icon />
               </Styled.SocialsItemLink>
             </Styled.SocialsItem>
           ))}

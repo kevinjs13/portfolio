@@ -7,7 +7,10 @@ interface NavigationProps {
 }
 
 export const NavigationContainer = styled.nav`
-  height: 120px;
+  height: 150px;
+  @media ${breakpoints.medium} {
+    height: 120px;
+  }
   background-color: #fff;
 `;
 

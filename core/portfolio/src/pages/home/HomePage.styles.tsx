@@ -4,17 +4,16 @@ import breakpoints from "../../styles/breakpoints.styles";
 export const HomePageContainer = styled.div`
   display: flex;
   width: 100%;
-  gap: 1rem;
+  gap: 0;
   height: 700px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  @media ${breakpoints.large} {
-    flex-wrap: nowrap;
+  @media ${breakpoints.medium} {
+    gap: 1rem;
   }
 `;
 export const ProfileImageContainer = styled.div`
-  flex: 1;
   text-align: center;
   align-self: center;
 `;
@@ -23,27 +22,34 @@ export const ProfileImage = styled.img`
   width: 80vw;
   object-fit: cover;
   border-radius: 50%;
+  border: 2px solid #000;
   @media ${breakpoints.medium} {
     height: 300px;
     width: 300px;
   }
   @media ${breakpoints.large} {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
   }
 `;
 export const SubtextContainer = styled.span`
   text-align: center;
-  flex: 1;
-  padding: 5em;
-  @media ${breakpoints.large} {
+  padding: 1em;
+  @media ${breakpoints.xlarge} {
     text-align: right;
+    padding: 5em;
   }
 `;
 
 export const Subtext = styled.div`
   margin-bottom: 1em;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  @media ${breakpoints.medium} {
+    font-size: 2.5rem;
+  }
+  @media ${breakpoints.large} {
+    font-size: 2rem;
+  }
 `;
 
 export const SocialsContainer = styled.ul`

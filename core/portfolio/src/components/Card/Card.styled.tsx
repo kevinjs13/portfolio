@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CardContainer = styled.div`
   width: 20rem;
+
   padding: 1em;
   background-color: #fff;
   border: 2px solid #000;
@@ -28,8 +29,9 @@ export const Description = styled.h2`
   font-size: 0.8em;
 `;
 
-export const TechStack = styled.span`
+export const TechStack = styled.div`
   font-size: 0.7em;
+  height: 50px;
 `;
 
 export const LinksContainer = styled.ul`
