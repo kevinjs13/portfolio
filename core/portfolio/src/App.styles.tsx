@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 export const AppContainer = styled.div`
-  /* height: 100vh;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
- */
+  font-family: Karla, sans-serif;
+  color: ${(props) => props.theme.color.primary};
   position: relative;
 `;

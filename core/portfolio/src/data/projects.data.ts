@@ -19,7 +19,7 @@ const PROJECTS_DATA: CardProps[] = [
     imageUrl:
       "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b7ae3c101743433.5f2731df9c194.png",
     imageAltText: `Logo for Black & White`,
-    techStack: `Vite, React, Redux, Styled Components, Express, Node.js, NestJS, GraphQL, Postgresql, Docker, GCP`,
+    techStack: `Vite, React, Redux, Styled Components, Express, Node.js, NestJS, GraphQL, Postgresql, Docker, GCP, Jest, react-testing-library`,
     title: "Black & White",
     description: "Eco Friendly Clothing Store",
     urls: {
@@ -33,7 +33,7 @@ const PROJECTS_DATA: CardProps[] = [
     imageUrl:
       "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e39379101743433.5f260eec1c852.png",
     imageAltText: `Logo for Malero`,
-    techStack: `React, Styled Components, Express, Node.js, Postgresql, Docker, Kubernetes, GCP`,
+    techStack: `Vite, React, MaterialUI, GCP`,
     title: "Malero",
     description: "Driverless Car Company",
     urls: {
@@ -47,7 +47,7 @@ const PROJECTS_DATA: CardProps[] = [
     imageUrl:
       "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6b8088101743433.5f260eec1a3cd.png",
     imageAltText: `Logo for Fleur`,
-    techStack: `React, Styled Components, Express, Node.js, Postgresql, Docker, Kubernetes, GCP`,
+    techStack: `Vite, React, Redux, Styled Components, Express, Node.js, NestJS, GraphQL, Postgresql, Docker, GCP, Jest, react-testing-library`,
     title: "Fleur",
     description: "Flower Shop",
     urls: {
@@ -61,7 +61,7 @@ const PROJECTS_DATA: CardProps[] = [
     imageUrl:
       "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3650d2101743433.5f260eec184e7.png",
     imageAltText: `Logo for Original East London Cafe`,
-    techStack: `React, Styled Components, Express, Node.js, Postgresql, Docker, Kubernetes, GCP`,
+    techStack: `Vite, React, Redux, Styled Components, Express, Node.js, NestJS, GraphQL, Postgresql, Docker, GCP, Jest, react-testing-library`,
     title: "Original East London Cafe",
     description: "Coffee Shop",
     urls: {
@@ -75,7 +75,7 @@ const PROJECTS_DATA: CardProps[] = [
     imageUrl:
       "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/44d321101743433.5f260eec1adc9.png",
     imageAltText: `Logo for Snowfall`,
-    techStack: `React, Styled Components, Express, Node.js, Postgresql, Docker, Kubernetes, GCP`,
+    techStack: `Vite, React, Redux, Styled Components, Express, Node.js, NestJS, GraphQL, Postgresql, Docker, GCP, Jest, react-testing-library`,
     title: "Snowfall",
     description: "Ski Mountain Hire Company",
     urls: {
@@ -89,7 +89,7 @@ const PROJECTS_DATA: CardProps[] = [
     imageUrl:
       "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2d643d101743433.5f260eec1d036.png",
     imageAltText: `Logo for Ember`,
-    techStack: `React, Styled Components, Express, Node.js, Postgresql, Docker, Kubernetes, GCP`,
+    techStack: `Vite, React, Redux, Styled Components, Express, Node.js, NestJS, GraphQL, Postgresql, Docker, GCP, Jest, react-testing-library`,
     title: "Ember",
     description: "High-End Meat Grill Restaurant",
     urls: {

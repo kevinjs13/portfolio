@@ -26,8 +26,19 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
-        padding:  0;
-        margin: 0;
+  background-color: ${(props) => props.theme.color.secondary};
+  height: 100vh;
+    background-image: linear-gradient(
+      13deg,
+      ${(props) => props.theme.color.background_color.body.bottom} 50%,
+      ${(props) => props.theme.color.background_color.body.top} 50.15%
+    );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: ${(props) => props.theme.color.secondary};
+    padding:  0;
+    margin: 0;
     }
     
 * {

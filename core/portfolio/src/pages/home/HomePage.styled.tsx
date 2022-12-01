@@ -12,6 +12,10 @@ export const HomePageContainer = styled.div`
   @media ${breakpoints.medium} {
     gap: 1rem;
   }
+  background-image: url(${(props) => props.theme.images.background_image});
+  background-size: 10em 10em;
+  background-position: right 1em bottom 1em;
+  background-repeat: no-repeat;
 `;
 export const ProfileImageContainer = styled.div`
   text-align: center;
@@ -22,7 +26,7 @@ export const ProfileImage = styled.img`
   width: 80vw;
   object-fit: cover;
   border-radius: 50%;
-  border: 2px solid #000;
+  border: 2px solid ${(props) => props.theme.color.primary};
   @media ${breakpoints.medium} {
     height: 300px;
     width: 300px;
@@ -85,10 +89,10 @@ export const SocialsItemLink = styled.a`
     padding: 1em;
     height: 3rem;
     width: 3rem;
-    color: #000;
+    color: ${(props) => props.theme.color.primary};
     &:hover {
-      color: #fff;
-      background-color: #000;
+      color: ${(props) => props.theme.color.secondary};
+      background-color: ${(props) => props.theme.color.primary};
       border-radius: 50%;
     }
   }
@@ -103,7 +107,7 @@ export const Link = styled.a`
   all: unset;
   cursor: pointer;
   &:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: ${(props) => props.theme.color.primary};
+    color: ${(props) => props.theme.color.secondary};
   }
 `;

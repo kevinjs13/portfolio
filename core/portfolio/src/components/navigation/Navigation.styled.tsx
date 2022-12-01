@@ -11,7 +11,7 @@ export const NavigationContainer = styled.nav`
   @media ${breakpoints.medium} {
     height: 120px;
   }
-  background-color: #fff;
+  background-color: ${(props) => props.theme.color.secondary};
 `;
 
 export const NavigationWrapper = styled.nav`
@@ -20,8 +20,8 @@ export const NavigationWrapper = styled.nav`
   display: flex;
   position: fixed;
   flex-direction: column;
-  background-color: #fff;
-  border-bottom: 2px solid #000;
+  background-color: ${(props) => props.theme.color.secondary};
+  border-bottom: 2px solid ${(props) => props.theme.color.primary};
   @media ${breakpoints.medium} {
     flex-direction: row;
   }
@@ -64,33 +64,33 @@ export const NavigationItem = styled.li`
 export const NavigationLink = styled(NavLink)<NavigationProps>`
   all: unset;
   cursor: pointer;
-  border: 2px solid #000;
+  border: 2px solid ${(props) => props.theme.color.border.link.nav.default};
   padding: 0 1rem;
+  background-color: ${(props) =>
+    props.theme.color.background_color.link.nav.default};
+  color: ${(props) => props.theme.color.text.link.nav.default};
+
+  &:hover {
+    background-color: ${(props) =>
+      props.theme.color.background_color.link.nav.hover};
+    color: ${(props) => props.theme.color.text.link.nav.hover};
+    border: 2px solid ${(props) => props.theme.color.border.link.nav.hover};
+  }
+
   ${(props) =>
     props.isActive &&
     css`
-      background-color: #000;
-      color: #fff;
+      &:hover {
+        background-color: ${(props) =>
+          props.theme.color.background_color.link.nav.active};
+        color: ${(props) => props.theme.color.text.link.nav.active};
+        border: 2px solid ${(props) => props.theme.color.border.link.nav.active};
+      }
+      background-color: ${(props) =>
+        props.theme.color.background_color.link.nav.active};
+      color: ${(props) => props.theme.color.text.link.nav.active};
+      border: 2px solid ${(props) => props.theme.color.border.link.nav.active};
     `}
-  &:hover {
-    background-color: #000;
-    color: #fff;
-  }
 `;
 
-export const FileLink = styled.a<NavigationProps>`
-  all: unset;
-  cursor: pointer;
-  border: 2px solid #000;
-  padding: 0 1rem;
-  ${(props) =>
-    props.isActive &&
-    css`
-      background-color: #000;
-      color: #fff;
-    `}
-  &:hover {
-    background-color: #000;
-    color: #fff;
-  }
-`;
+export const FileLink = NavigationLink.withComponent("a");

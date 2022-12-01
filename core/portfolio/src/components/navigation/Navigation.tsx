@@ -4,6 +4,7 @@ import { NavigationItems } from "../../data/routes.data";
 import { useLocation } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
+
 const Navigation: React.FC = () => {
   const location = useLocation();
 
@@ -14,6 +15,7 @@ const Navigation: React.FC = () => {
           <Styled.Logo>KEVIN JEFFERSON</Styled.Logo>
         </Styled.LogoContainer>
         <Styled.NavigationList>
+        
           {NavigationItems.map((navigationItem) => {
             if (navigationItem.type === "file") {
               return (

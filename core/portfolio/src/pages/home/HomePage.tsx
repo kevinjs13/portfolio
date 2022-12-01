@@ -1,5 +1,5 @@
 import React from "react";
-import * as Styled from "./HomePage.styles";
+import * as Styled from "./HomePage.styled";
 import ProfileImage from "../../assets/images/profile.jpg";
 // import ProfileImage from "../../assets/images/profile-sketch.png";
 
@@ -63,33 +63,29 @@ const HomePage: React.FC = () => {
       </Styled.ProfileImageContainer>
       <Styled.SubtextContainer>
         <Styled.Subtext>
-          Hi! I'm
+          Hi! I'm{" "}
           <Styled.BoldText>
             <Styled.Link href={links.personal} target="_blank">
-              {" "}
               Kevin
             </Styled.Link>
           </Styled.BoldText>
-          <br />A
+          <br />A{" "}
           <Styled.BoldText>
             <Styled.Link href={links.github} target="_blank">
-              {" "}
               full stack software engineer
             </Styled.Link>
           </Styled.BoldText>
-          <br /> with a passion for
+          <br /> with a passion for{" "}
           <Styled.BoldText>
             <Styled.Link href={links.design} target="_blank">
-              {" "}
               design
             </Styled.Link>
           </Styled.BoldText>
         </Styled.Subtext>
         <Styled.Subtext>
-          I also like to
+          I also like to{" "}
           <Styled.BoldText>
             <Styled.Link href={links.cook} target="_blank">
-              {" "}
               cook
             </Styled.Link>
           </Styled.BoldText>
@@ -106,10 +102,9 @@ const HomePage: React.FC = () => {
             </Styled.Link>
           </Styled.BoldText>
           , <br />
-          and
+          and{" "}
           <Styled.BoldText>
             <Styled.Link href={links.travel} target="_blank">
-              {" "}
               travel
             </Styled.Link>
           </Styled.BoldText>

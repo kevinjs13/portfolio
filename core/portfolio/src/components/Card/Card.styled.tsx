@@ -4,14 +4,14 @@ export const CardContainer = styled.div`
   width: 20rem;
 
   padding: 1em;
-  background-color: #fff;
-  border: 2px solid #000;
+  background-color: ${(props) => props.theme.color.secondary};
+  border: 2px solid ${(props) => props.theme.color.primary};
 `;
 
 export const ImageContainer = styled.div`
   text-align: center;
   height: 200px;
-  border: 2px solid #000;
+  border: 2px solid ${(props) => props.theme.color.primary};
 `;
 
 export const Image = styled.img`
@@ -40,6 +40,5 @@ export const LinksContainer = styled.ul`
 `;
 export const Link = styled.li`
   margin-top: 1em;
-  background-color: #fff;
-  border: 2px solid #000;
+  border: 2px solid ${(props) => props.theme.color.border.link.list.default};
 `;

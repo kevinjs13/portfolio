@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const DefaultContainer = styled.div`
-  background-color: #FCF0D5;
+  background-color: ${(props) => props.theme.color.primary};
   height: 100%;
 `;

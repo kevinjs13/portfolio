@@ -8,6 +8,9 @@ export const CardLink = styled.a`
   display: inline-flex;
   align-items: center;
   padding: 0.5rem;
+  background-color: ${(props) =>
+    props.theme.color.background_color.link.list.default};
+  color: ${(props) => props.theme.color.text.link.list.default};
   svg {
     height: 25px;
     width: 25px;
@@ -17,8 +20,9 @@ export const CardLink = styled.a`
   }
 
   &:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: ${(props) =>
+      props.theme.color.background_color.link.list.hover};
+    color: ${(props) => props.theme.color.text.link.list.hover};
     cursor: pointer;
   }
 `;
