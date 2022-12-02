@@ -5,11 +5,12 @@ interface CardLinkProps {
   text: string;
   link: string;
   icon?: JSX.Element;
+  active: boolean;
 }
 
-const CardLink: React.FC<CardLinkProps> = ({ text, link, icon }) => {
+const CardLink: React.FC<CardLinkProps> = ({ text, link, icon, active }) => {
   return (
-    <Styled.CardLink href={link}>
+    <Styled.CardLink href={link} active={active}>
       {icon} <span>{text}</span>
     </Styled.CardLink>
   );

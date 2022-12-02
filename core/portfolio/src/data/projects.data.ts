@@ -9,10 +9,13 @@ const PROJECTS_DATA: CardProps[] = [
     title: "Nova",
     description: "A Games Development Company",
     urls: {
-      appUrl: "",
-      brandingUrl: "https://www.behance.net/gallery/97562563/NOVA",
-      wireframeUrl: "",
-      repositoryUrl: "",
+      appUrl: { text: "", active: false },
+      brandingUrl: {
+        text: "https://www.behance.net/gallery/97562563/NOVA",
+        active: true,
+      },
+      wireframeUrl: { text: "", active: false },
+      repositoryUrl: { text: "", active: false },
     },
   },
   {
@@ -23,10 +26,10 @@ const PROJECTS_DATA: CardProps[] = [
     title: "Black & White",
     description: "Eco Friendly Clothing Store",
     urls: {
-      appUrl: "",
-      brandingUrl: "",
-      wireframeUrl: "",
-      repositoryUrl: "",
+      appUrl: { text: "", active: false },
+      brandingUrl: { text: "", active: false },
+      wireframeUrl: { text: "", active: false },
+      repositoryUrl: { text: "", active: false },
     },
   },
   {
@@ -37,10 +40,10 @@ const PROJECTS_DATA: CardProps[] = [
     title: "Malero",
     description: "Driverless Car Company",
     urls: {
-      appUrl: "",
-      brandingUrl: "",
-      wireframeUrl: "",
-      repositoryUrl: "",
+      appUrl: { text: "", active: false },
+      brandingUrl: { text: "", active: false },
+      wireframeUrl: { text: "", active: false },
+      repositoryUrl: { text: "", active: false },
     },
   },
   {
@@ -51,10 +54,10 @@ const PROJECTS_DATA: CardProps[] = [
     title: "Fleur",
     description: "Flower Shop",
     urls: {
-      appUrl: "",
-      brandingUrl: "",
-      wireframeUrl: "",
-      repositoryUrl: "",
+      appUrl: { text: "", active: false },
+      brandingUrl: { text: "", active: false },
+      wireframeUrl: { text: "", active: false },
+      repositoryUrl: { text: "", active: false },
     },
   },
   {
@@ -65,10 +68,10 @@ const PROJECTS_DATA: CardProps[] = [
     title: "Original East London Cafe",
     description: "Coffee Shop",
     urls: {
-      appUrl: "",
-      brandingUrl: "",
-      wireframeUrl: "",
-      repositoryUrl: "",
+      appUrl: { text: "", active: false },
+      brandingUrl: { text: "", active: false },
+      wireframeUrl: { text: "", active: false },
+      repositoryUrl: { text: "", active: false },
     },
   },
   {
@@ -79,10 +82,10 @@ const PROJECTS_DATA: CardProps[] = [
     title: "Snowfall",
     description: "Ski Mountain Hire Company",
     urls: {
-      appUrl: "",
-      brandingUrl: "",
-      wireframeUrl: "",
-      repositoryUrl: "",
+      appUrl: { text: "", active: false },
+      brandingUrl: { text: "", active: false },
+      wireframeUrl: { text: "", active: false },
+      repositoryUrl: { text: "", active: false },
     },
   },
   {
@@ -93,10 +96,10 @@ const PROJECTS_DATA: CardProps[] = [
     title: "Ember",
     description: "High-End Meat Grill Restaurant",
     urls: {
-      appUrl: "",
-      brandingUrl: "",
-      wireframeUrl: "",
-      repositoryUrl: "",
+      appUrl: { text: "", active: false },
+      brandingUrl: { text: "", active: false },
+      wireframeUrl: { text: "", active: false },
+      repositoryUrl: { text: "", active: false },
     },
   },
   {
@@ -107,10 +110,10 @@ const PROJECTS_DATA: CardProps[] = [
     title: "Frostee",
     description: "Cupcake Bakery",
     urls: {
-      appUrl: "",
-      brandingUrl: "",
-      wireframeUrl: "",
-      repositoryUrl: "",
+      appUrl: { text: "", active: false },
+      brandingUrl: { text: "", active: false },
+      wireframeUrl: { text: "", active: false },
+      repositoryUrl: { text: "", active: false },
     },
   },
 ];

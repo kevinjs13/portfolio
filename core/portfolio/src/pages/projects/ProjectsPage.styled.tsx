@@ -6,6 +6,7 @@ export const ProjectsContainer = styled.div`
   row-gap: 3em;
   flex-wrap: wrap;
   padding: 1em;
+  margin-top: 1em;
   justify-content: center;
   align-items: center;
 `;

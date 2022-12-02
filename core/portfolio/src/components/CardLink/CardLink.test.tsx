@@ -15,7 +15,7 @@ describe(`Card Link component`, () => {
   it("should be a link", async () => {
     render(
       <ThemeProvider theme={DefaultThemeStyles}>
-        <CardLink text={linkText} link={linkUrl} />
+        <CardLink text={linkText} link={linkUrl} active />
       </ThemeProvider>
     );
 
@@ -26,7 +26,7 @@ describe(`Card Link component`, () => {
   it("should have a text based on prop", async () => {
     render(
       <ThemeProvider theme={DefaultThemeStyles}>
-        <CardLink text={linkText} link={linkUrl} />
+        <CardLink text={linkText} link={linkUrl} active />
       </ThemeProvider>
     );
     const link = await screen.findAllByRole("link", {
@@ -38,7 +38,7 @@ describe(`Card Link component`, () => {
   it("should have a link based on prop", async () => {
     render(
       <ThemeProvider theme={DefaultThemeStyles}>
-        <CardLink text={linkText} link={linkUrl} />
+        <CardLink text={linkText} link={linkUrl} active />
       </ThemeProvider>
     );
     const link = await screen.findByRole("link", {
@@ -55,6 +55,7 @@ describe(`Card Link component`, () => {
           text={linkText}
           link={linkUrl}
           icon={<IoAccessibilityOutline />}
+          active
         />
       </ThemeProvider>
     );

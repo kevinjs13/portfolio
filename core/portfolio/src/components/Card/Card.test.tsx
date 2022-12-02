@@ -8,10 +8,10 @@ import { ThemeProvider } from "styled-components";
 import DefaultThemeStyles from "../../styles/theme.styles";
 
 const urlLists = {
-  appUrl: "",
-  brandingUrl: "",
-  wireframeUrl: "",
-  repositoryUrl: "",
+  appUrl: { text: "", active: false },
+  brandingUrl: { text: "", active: false },
+  wireframeUrl: { text: "", active: false },
+  repositoryUrl: { text: "", active: false },
 };
 
 const mockProps = {

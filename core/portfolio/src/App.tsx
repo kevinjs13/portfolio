@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import * as Styled from "./App.styles";
+import * as Styled from "./App.styled";
 import Navigation from "./components/Navigation";
 import ProjectsPage from "./pages/projects/ProjectsPage";
 import HomePage from "./pages/home/HomePage";
@@ -14,16 +14,21 @@ const App: React.FC = () => {
   const handleSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setTheme(event.target.value.toLowerCase());
   };
+  
   return (
     <Router>
       <Styled.AppContainer>
         <Navigation />
-        <Select onChange={(event) => handleSelect(event)}>
-          <option>Panda</option>
-          <option>Rhubarb</option>
-          <option>Bumblebee</option>
-          <option>Pumpkin</option>
-        </Select>
+        <Styled.SelectWrapper>
+          <span>Select Theme:</span>
+          <Select onChange={(event) => handleSelect(event)}>
+            <option>Panda</option>
+            <option>Rhubarb</option>
+            <option>Bumblebee</option>
+            <option>Pumpkin</option>
+          </Select>
+        </Styled.SelectWrapper>
+
         <Routes>
           <Route path={Paths.ABOUT_ME} element={<HomePage />} />
           <Route path={Paths.PROJECTS} element={<ProjectsPage />} />

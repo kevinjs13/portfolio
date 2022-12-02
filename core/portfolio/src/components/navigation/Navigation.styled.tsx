@@ -8,6 +8,8 @@ interface NavigationProps {
 
 export const NavigationContainer = styled.nav`
   height: 150px;
+  position: relative;
+  z-index: 999;
   @media ${breakpoints.medium} {
     height: 120px;
   }
@@ -41,6 +43,7 @@ export const LogoContainer = styled(NavLink)`
 export const Logo = styled.span`
   font-family: "Staatliches", sans-serif;
   font-size: 2.5rem;
+  padding-left: 0.3em;
 `;
 
 export const NavigationList = styled.ul`

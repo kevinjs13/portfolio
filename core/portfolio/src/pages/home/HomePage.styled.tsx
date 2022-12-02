@@ -1,5 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import breakpoints from "../../styles/breakpoints.styles";
+
+export const slideFromLeft = keyframes`
+ from { margin-right: 5em }
+  to { margin-right: 0 }
+`;
+
+export const slideFromRight = keyframes`
+ from { margin-left: 5em }
+  to { margin-left: 0 }
+`;
 
 export const HomePageContainer = styled.div`
   display: flex;
@@ -9,17 +19,15 @@ export const HomePageContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  @media ${breakpoints.medium} {
-    gap: 1rem;
-  }
-  background-image: url(${(props) => props.theme.images.background_image});
-  background-size: 10em 10em;
-  background-position: right 1em bottom 1em;
-  background-repeat: no-repeat;
 `;
 export const ProfileImageContainer = styled.div`
   text-align: center;
   align-self: center;
+  animation: 1s ${slideFromLeft};
+  /* background-image: url(${(props) => props.theme.images.background_image});
+  background-size: 3em 3em;
+  background-position: right 1em top 1em;
+  background-repeat: no-repeat; */
 `;
 export const ProfileImage = styled.img`
   height: 80vw;
@@ -27,6 +35,7 @@ export const ProfileImage = styled.img`
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid ${(props) => props.theme.color.primary};
+
   @media ${breakpoints.medium} {
     height: 300px;
     width: 300px;
@@ -43,6 +52,7 @@ export const SubtextContainer = styled.span`
     text-align: right;
     padding: 5em;
   }
+  animation: 1s ${slideFromRight};
 `;
 
 export const Subtext = styled.div`
@@ -53,48 +63,6 @@ export const Subtext = styled.div`
   }
   @media ${breakpoints.large} {
     font-size: 2rem;
-  }
-`;
-
-export const SocialsContainer = styled.ul`
-  all: unset;
-  margin-top: 1em;
-  display: flex;
-  gap: 3em;
-  flex-direction: unset;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  @media ${breakpoints.large} {
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-  }
-`;
-
-export const SocialsItem = styled.li`
-  list-style: none;
-  border-radius: 50%;
-  height: 5rem;
-  width: 5rem;
-  text-align: center;
-`;
-
-export const SocialsItemLink = styled.a`
-  all: unset;
-  cursor: pointer;
-  text-decoration: none;
-
-  svg {
-    padding: 1em;
-    height: 3rem;
-    width: 3rem;
-    color: ${(props) => props.theme.color.primary};
-    &:hover {
-      color: ${(props) => props.theme.color.secondary};
-      background-color: ${(props) => props.theme.color.primary};
-      border-radius: 50%;
-    }
   }
 `;
 

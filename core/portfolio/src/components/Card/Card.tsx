@@ -9,11 +9,15 @@ import CardLink from "../CardLink";
 import * as Styled from "./Card.styled";
 import { v4 as uuidv4 } from "uuid";
 
+export interface CardUrlListItem {
+  text: string;
+  active: boolean;
+}
 interface CardUrlList {
-  appUrl: string;
-  brandingUrl: string;
-  wireframeUrl: string;
-  repositoryUrl: string;
+  appUrl: CardUrlListItem;
+  brandingUrl: CardUrlListItem;
+  wireframeUrl: CardUrlListItem;
+  repositoryUrl: CardUrlListItem;
 }
 
 export interface CardProps {
@@ -58,8 +62,9 @@ const Card: React.FC<CardProps> = ({
             <CardLink
               key={uuidv4()}
               text={linksDataItem.text}
-              link={linksDataItem.link}
+              link={linksDataItem.link.text}
               icon={linksDataItem.icon}
+              active={linksDataItem.link.active}
             />
           </Styled.Link>
         ))}
