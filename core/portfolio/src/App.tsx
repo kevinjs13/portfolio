@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import * as Styled from "./App.styled";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/NavigationContainer";
 import ProjectsPage from "./pages/projects/ProjectsPage";
 import HomePage from "./pages/home/HomePage";
 import { Paths } from "./data/routes.data";
