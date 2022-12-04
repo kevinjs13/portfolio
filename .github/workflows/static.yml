@@ -39,7 +39,11 @@ jobs:
           source: ./core/portfolio/build
           destination: ./_site
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v3
+        with:
+          name: portfolio-artifact
+          path: 'core/portfolio/build'
+          if-no-files-found: error
 
   # Deployment job
   deploy:
@@ -49,6 +53,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: portfolio
+          path: .
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
