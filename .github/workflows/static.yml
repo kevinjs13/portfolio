@@ -18,10 +18,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    - name: Install dependencies
-      run: yarn install
-    - name: Build portfolio
-      run: yarn portfolio build
+      - name: Install dependencies
+        run: yarn install
+      - name: Build portfolio
+        run: yarn portfolio build
 
   deploy:
     environment:
