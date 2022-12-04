@@ -26,10 +26,10 @@ jobs:
       - name: Build portfolio
         run: yarn portfolio build
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v1
         with:
           name: portfolio
-          path: 'core/portfolio/build'
+          path: 'core/portfolio'
           if-no-files-found: error
 
   deploy:
