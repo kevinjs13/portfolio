@@ -1,5 +1,5 @@
 export enum Paths {
-  ABOUT_ME = "/",
+  ABOUT_ME = "/about-me",
   PROJECTS = "/projects",
   RESUME = "../assets/files/resume.pdf",
 }

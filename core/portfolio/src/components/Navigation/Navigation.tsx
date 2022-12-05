@@ -1,6 +1,6 @@
 import React from "react";
 import * as Styled from "./Navigation.styled";
-import { NavigationItems } from "../../data/routes.data";
+import { NavigationItems, Paths } from "../../data/routes.data";
 import { useLocation } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 
@@ -11,7 +11,7 @@ const Navigation: React.FC = () => {
   return (
     <Styled.NavigationContainer>
       <Styled.NavigationWrapper>
-        <Styled.LogoContainer to="/">
+        <Styled.LogoContainer to={Paths.ABOUT_ME}>
           <Styled.Logo>KEVIN JEFFERSON</Styled.Logo>
         </Styled.LogoContainer>
         <Styled.NavigationList>
