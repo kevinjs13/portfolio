@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.f21a80c5.js",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.147dbfb755a421b82500.jpg",
+    "static/media/Staatliches-Regular.ttf": "/portfolio/static/media/Staatliches-Regular.134482285baed3198bb5.ttf",
+    "static/media/Karla-Bold.ttf": "/portfolio/static/media/Karla-Bold.623c61b6f8c6529800b2.ttf",
+    "static/media/Karla-Medium.ttf": "/portfolio/static/media/Karla-Medium.2cee120bb74393b6a337.ttf",
+    "static/media/pumpkin.png": "/portfolio/static/media/pumpkin.88abc635b19647cf7d68.png",
+    "static/media/bee.png": "/portfolio/static/media/bee.972fd774a33a4b967fea.png",
+    "static/media/panda.png": "/portfolio/static/media/panda.94a3d885af3c1dbbb916.png",
+    "static/media/rhubarb.png": "/portfolio/static/media/rhubarb.e70470a287f76ae6dedb.png",
+    "index.html": "/portfolio/index.html",
+    "main.f21a80c5.js.map": "/portfolio/static/js/main.f21a80c5.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.f21a80c5.js"
+  ]
+}
