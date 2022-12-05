@@ -49,8 +49,7 @@ If you'd like to run my portfolio. Follow the next instructions.
   ```sh
   npm install --global yarn
   ```
-* Docker
-<br>
+* Docker - 
 <a href="https://docs.docker.com/get-docker/">Installation instructions</a>
   
 ### Installation
