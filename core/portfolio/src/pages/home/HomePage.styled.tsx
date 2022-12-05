@@ -15,7 +15,7 @@ export const HomePageContainer = styled.div`
   display: flex;
   width: 100%;
   gap: 0;
-  height: 700px;
+  height: 650px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -24,10 +24,6 @@ export const ProfileImageContainer = styled.div`
   text-align: center;
   align-self: center;
   animation: 1s ${slideFromLeft};
-  /* background-image: url(${(props) => props.theme.images.background_image});
-  background-size: 3em 3em;
-  background-position: right 1em top 1em;
-  background-repeat: no-repeat; */
 `;
 export const ProfileImage = styled.img`
   height: 80vw;
