@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,32 +24,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Build portfolio
-        run: yarn portfolio build
-      - name: Upload artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: portfolio
-          path: 'core/portfolio/build'
-          if-no-files-found: error
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/download-artifact@v3
-        with:
-          name: portfolio
-          path: .
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-      - name: Upload Pages
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: .
-      - name: Deploy to GitHub Pages
-        id: deployment
+        run: yarn portfolio predeploy      
+      - name: Deploy portfolio
         run: yarn portfolio deploy
-
