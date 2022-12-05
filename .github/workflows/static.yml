@@ -55,7 +55,7 @@ jobs:
     steps:
       - uses: actions/download-artifact@v3
         with:
-          name: portfolio
+          name: portfolio-artifact
           path: .
       - name: Deploy to GitHub Pages
         id: deployment
