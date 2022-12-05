@@ -51,7 +51,7 @@ If you'd like to run my portfolio. Follow the next instructions.
   ```
 * Docker
 <br>
-[Installation instructions](https://docs.docker.com/get-docker/)
+<a href="https://docs.docker.com/get-docker/">Installation instructions</a>
   
 ### Installation
 
