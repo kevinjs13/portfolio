@@ -10,7 +10,7 @@ interface CardLinkProps {
 
 const CardLink: React.FC<CardLinkProps> = ({ text, link, icon, active }) => {
   return (
-    <Styled.CardLink href={link} active={active}>
+    <Styled.CardLink href={active ? link : '#'} active={active}>
       {icon} <span>{text}</span>
     </Styled.CardLink>
   );
