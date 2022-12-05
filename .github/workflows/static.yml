@@ -24,6 +24,10 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Build portfolio
-        run: yarn portfolio predeploy      
+        run: yarn portfolio predeploy            
+      - name: Git config 
+        run: |
+          git config user.email "kevinsouriio13@gmail.com"
+          git config user.name "kevinjs13"      
       - name: Deploy portfolio
         run: yarn portfolio deploy
